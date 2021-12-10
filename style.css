@@ -40,6 +40,23 @@ justify-content: baseline;
   margin-top: 1em;
 }
 
+.heading-title{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.heading-title:after{
+  content:"";
+    background-color: tomato;
+    margin-top: 8px;
+    height: 0.15em;
+    width: 10rem;
+    border-radius: .25em;
+}
+
 .card-head{
     display: flex;
     justify-content: space-around;
@@ -58,12 +75,6 @@ justify-content: baseline;
 .card-text{
     text-align: justify;
 }
- /* .kharid{
-    position: relative;
-    border: none;
-    transition: all 1s ease-in-out;
-} */
-
 
 .kharid::after {
     content:"خرید";
